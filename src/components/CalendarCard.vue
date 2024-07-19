@@ -2,7 +2,7 @@
     <div class="py-4 px-5 border rounded-xl bg-white">
         <h2 class="text-xl font-semibold mb-4">{{ monthName }} {{ year }}</h2>
         <div class="grid grid-cols-7 gap-2">
-            <div v-for="day in daysOfWeek" :key="day" :class="day === 'Sun' ? '!text-red-500' : ''" class="font-medium mb-2 text-neutral-500 flex justify-center items-center">{{ day }}</div>
+            <div v-for="day in daysOfWeek" :key="day" :class="day === 'Sun' ? '!text-red-500' : ''" class="font-medium mb-2 text-neutral-500 flex justify-center items-center text-sm">{{ day }}</div>
             <div v-for="day in blankDays" :key="day" class="flex justify-center items-center"><span class="rounded-full w-3 h-3 bg-neutral-100"></span></div>
             <div v-for="day in daysInMonth" :key="day" :class="[dayClasses(day), 'text-center']">
                 {{ day }}
