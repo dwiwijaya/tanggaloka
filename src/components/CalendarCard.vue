@@ -1,10 +1,10 @@
 <template>
-    <div class="py-4 px-5 border rounded-xl bg-white">
-        <h2 class="text-xl font-semibold mb-4">{{ monthName }} {{ year }}</h2>
+    <div class="py-4 px-5 border rounded-xl bg-container border-stroke">
+        <h2 class="text-xl dark:text-neutral-300 font-semibold mb-4">{{ monthName }} {{ year }}</h2>
         <div class="grid grid-cols-7 gap-2">
-            <div v-for="day in daysOfWeek" :key="day" :class="day === 'Sun' ? '!text-red-500' : ''" class="font-medium mb-2 text-neutral-800 flex justify-center items-center">{{ day }}</div>
-            <div v-for="day in blankDays" :key="day" class="flex justify-center items-center"><span class="rounded-full w-3 h-3 bg-neutral-100"></span></div>
-            <div v-for="day in daysInMonth" :key="day" :class="[dayClasses(day), isToday(day), 'text-center !w-8 h-8 flex justify-center items-center text-neutral-600 text-sm']">
+            <div v-for="day in daysOfWeek" :key="day" :class="day === 'Sun' ? '!text-red-500' : ''" class="font-medium mb-2 text-neutral-800 dark:text-neutral-400 flex justify-center items-center">{{ day }}</div>
+            <div v-for="day in blankDays" :key="day" class="flex justify-center items-center"><span class="rounded-full w-3 h-3 bg-neutral-100 dark:bg-neutral-700"></span></div>
+            <div v-for="day in daysInMonth" :key="day" :class="[dayClasses(day), isToday(day), 'text-center !w-8 h-8 flex justify-center items-center text-neutral-600 dark:text-neutral-500 text-sm']">
                 {{ day }}
             </div>
         </div>
@@ -52,7 +52,7 @@ export default {
             };
         },
         isToday(day) {
-            return `${this.year}-${this.month + 1}-${day}` == this.today ? 'bg-neutral-700 !text-neutral-100 rounded-full' : '';
+            return `${this.year}-${this.month + 1}-${day}` == this.today ? 'bg-neutral-700 dark:bg-neutral-300 !text-neutral-100 dark:!text-neutral-600 rounded-full' : '';
         }
     },
 };
