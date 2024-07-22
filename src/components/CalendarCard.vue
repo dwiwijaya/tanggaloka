@@ -52,7 +52,7 @@ export default {
             };
         },
         isToday(day) {
-            return `${this.year}-${this.month + 1}-${day}` == this.today ? 'bg-neutral-700 dark:bg-neutral-300 !text-neutral-100 dark:!text-neutral-600 rounded-full' : '';
+            return `${this.year}-${this.month + 1}-${day}` == this.today ? 'bg-neutral-600 dark:bg-neutral-200 !text-neutral-100 dark:!text-neutral-600 rounded-lg' : '';
         }
     },
 };
