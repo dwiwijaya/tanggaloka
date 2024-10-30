@@ -2,7 +2,7 @@
     <header>
         <div class="flex items-center justify-between h-20 px-4 lg:px-10 bg-container border border-b border-stroke">
             <div class="brand flex items-center gap-2">
-                <img class="w-8" src="../assets/logo.png" alt="" srcset="">
+                <img class="w-8" :src="'/logo.png'" alt="" srcset="">
                 <p class="font-bold text-lg text-neutral-600"></p>
             </div>
             <div class="flex gap-2">
