@@ -59,7 +59,7 @@ export default {
             };
         },
         isToday(day) {
-            return `${this.year}-${this.month + 1}-${day}` == this.today ? '!text-green-500' : '';
+            return `${this.year}-${this.month + 1}-${day}` == this.today ? '!text-primary' : '';
         },
         getPasaranDay(day) {
             const pasaran = ["Pahing", "Pon", "Wage", "Kliwon", "Legi"];
