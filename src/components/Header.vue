@@ -67,7 +67,7 @@ const day = computed(() => dayjs(today.value).date());
 const monthName = computed(() => dayjs(today.value).format("MMMM"));
 const dayName = computed(() => dayjs(today.value).format("dddd"));
 const javaneseMarketDay = computed(() => {
-    const marketDays = ["Legi", "Pahing", "Pon", "Wage", "Kliwon"];
+    const marketDays = ["Pahing", "Pon", "Wage", "Kliwon", "Legi"];
     const baseDate = dayjs("2023-01-01");
     const daysSinceBase = dayjs(today.value).diff(baseDate, "day");
     return marketDays[daysSinceBase % 5];
