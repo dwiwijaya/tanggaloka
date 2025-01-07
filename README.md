@@ -8,6 +8,11 @@ This project is built with **Vite** and **Vue.js**.
 
 - Show the current date along with the corresponding Javanese "Pasaran" (market day).
 - Fast and responsive web app built with Vite and Vue.js.
+## Screenshot
+
+Here’s a preview of the website:
+
+![Portfolio Website Screenshot](/assets/screenshot.png)
 
 ## Technologies Used
 
