@@ -12,7 +12,7 @@ This project is built with **Vite** and **Vue.js**.
 
 Here’s a preview of the website:
 
-![Portfolio Website Screenshot](/assets/screenshot.png)
+![Tanggaloka Website Screenshot](/assets/screenshot.png)
 
 ## Technologies Used
 
